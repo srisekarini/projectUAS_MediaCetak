@@ -1,0 +1,41 @@
+Tabel user :
+id_user
+nama
+jenis kelamin
+ttl
+email
+no_hp
+alamat
+username
+password
+roles (admin/pengguna/superadmin)
+
+Tabel petugas :
+id_petugas
+id_user
+tgl_tugas
+shift
+keterangan (jenis pekerjaan yg sedang dilakukan, misal:print, mengirim file, dll)
+
+Tabel pelanggan:
+id_pelanggan
+id_user
+jenis_pelanggan (mahasiswa/umum)
+
+Tabel dokumen:
+id_dokumen
+id_pelanggan
+nama_dokumen
+jenis_dokumen
+status_dokumen(selesai/belum/pending)
+tgl_kirim_dokumen
+tgl_ambil_dokumen
+harga
+
+
+Tabel pembayaran online :
+id_pembayaran
+id_dokumen
+id_petugas
+jenis_pembayaran (cash/transfer)
+status (sudah bayar/ belum bayar)
